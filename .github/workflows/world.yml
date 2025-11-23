@@ -6,7 +6,6 @@ jobs:
    steps:
    - name: print hello world
      run: echo "hello world, Github Action!"
-     if: start goodby
  say-goodby:
     runs-on: amazon-linux
     steps:
