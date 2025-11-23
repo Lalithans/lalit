@@ -1,13 +1,13 @@
 name: hello world
-on: [push]
+on: workflow_dispatch
 jobs:
  say-hello-world:
-   runs-on: amazon-linux
+   runs-on: ubuntu-latest
    steps:
    - name: print hello world
      run: echo "hello world, Github Action!"
  say-goodby:
-    runs-on: amazon-linux
+    runs-on: ubuntu-latest
     steps:
     - name: start goodby
       run: echo "goodby,Github Action!"
