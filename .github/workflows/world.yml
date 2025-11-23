@@ -7,6 +7,7 @@ jobs:
    - name: print hello world
      run: echo "hello world, Github Action!"
  say-goodby:
+    needs: say-hello-world
     runs-on: ubuntu-latest
     steps:
     - name: start goodby
