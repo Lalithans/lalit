@@ -1,0 +1,16 @@
+name: hello world
+on: [push]
+jobs
+ say-hello-world:
+   runs-on: amazon-linux
+   steps:
+   - name: print hello world
+     run: echo "hello world, Github Action!"
+     notify: start goodby
+  say-goodby:
+    runs-on: amazon-linux
+    steps:
+    - name: start goodby
+      run: echo "goodby,Github Action!"
+      
+      
